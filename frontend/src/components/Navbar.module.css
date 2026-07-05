@@ -1,0 +1,92 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(248, 250, 252, 0.96);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(37, 99, 235, 0.12);
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.06);
+}
+
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--secondary);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 999px;
+  background: var(--primary);
+}
+
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.link,
+.nav a {
+  color: #334155;
+  font-weight: 600;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.link:hover,
+.nav a:hover,
+.link:focus-visible,
+.nav a:focus-visible {
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+.active {
+  color: var(--primary);
+}
+
+.login {
+  color: #FFFFFF;
+  background: var(--primary);
+  padding: 12px 22px;
+  border-radius: 16px;
+  font-weight: 700;
+  box-shadow: 0 16px 30px rgba(37, 99, 235, 0.16);
+}
+
+.login:hover,
+.login:focus-visible {
+  background: #1d4ed8;
+  box-shadow: 0 20px 34px rgba(37, 99, 235, 0.24);
+}
+
+@media (max-width: 860px) {
+  .container {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 22px 20px;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: center;
+    gap: 14px;
+    margin-top: 14px;
+  }
+}

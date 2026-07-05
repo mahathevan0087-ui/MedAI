@@ -1,0 +1,117 @@
+.historyPage {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 88px 24px 100px;
+}
+
+.pageHeader span {
+  display: inline-flex;
+  color: var(--primary);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.pageHeader h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.2rem, 2.2vw, 3rem);
+  margin-bottom: 30px;
+  color: var(--secondary);
+}
+
+.reportGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.reportCard {
+  background: #ffffff;
+  border-radius: 34px;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  padding: 32px;
+  box-shadow: var(--shadow-soft);
+  display: grid;
+  gap: 20px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.reportCard:hover,
+.reportCard:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 28px 64px rgba(15, 23, 42, 0.1);
+}
+
+.reportHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 18px;
+}
+
+.reportHeader h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--secondary);
+}
+
+.reportCard p {
+  color: var(--muted);
+}
+
+.reportFooter {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  align-items: center;
+}
+
+.reportFooter button {
+  background: var(--primary);
+  color: #ffffff;
+  border-radius: 18px;
+  padding: 14px 22px;
+  font-weight: 700;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.reportFooter button:hover,
+.reportFooter button:focus-visible {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.reportFooter span {
+  color: var(--muted);
+}
+
+.reviewed,
+.pending {
+  display: inline-flex;
+  padding: 10px 18px;
+  border-radius: 999px;
+  font-weight: 700;
+}
+
+.reviewed {
+  background: rgba(16, 185, 129, 0.14);
+  color: #047857;
+}
+
+.pending {
+  background: rgba(234, 179, 8, 0.14);
+  color: #b45309;
+}
+
+@media (max-width: 980px) {
+  .reportGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .reportGrid {
+    grid-template-columns: 1fr;
+  }
+}

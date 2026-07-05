@@ -1,0 +1,169 @@
+.resultsPage {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 88px 24px 100px;
+  display: grid;
+  gap: 36px;
+}
+
+.resultsGrid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 26px;
+}
+
+.summaryCard,
+.tableCard,
+.riskCard,
+.analysisSummary {
+  background: var(--surface);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 36px;
+  padding: 34px;
+  box-shadow: var(--shadow-soft);
+}
+
+.overline {
+  display: inline-flex;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 18px;
+}
+
+.summaryCard h1,
+.riskCard h2,
+.analysisSummary h2 {
+  margin-bottom: 18px;
+  color: var(--secondary);
+}
+
+.summaryCard p,
+.analysisSummary p {
+  color: var(--muted);
+  max-width: 640px;
+  margin-bottom: 24px;
+}
+
+.metricRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.metricRow div {
+  background: rgba(37, 99, 235, 0.06);
+  padding: 24px;
+  border-radius: 24px;
+}
+
+.metricRow p {
+  color: var(--muted);
+  margin-bottom: 10px;
+}
+
+.metricRow strong {
+  font-size: 1.5rem;
+  color: var(--secondary);
+}
+
+.tableHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.tableHeader h2 {
+  margin: 0;
+}
+
+.tableHeader span {
+  color: var(--muted);
+}
+
+.tableBody {
+  display: grid;
+  gap: 16px;
+}
+
+.tableRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 16px;
+  align-items: center;
+  padding: 20px 24px;
+  border-radius: 24px;
+  background: rgba(37, 99, 235, 0.05);
+}
+
+.tableRow p {
+  margin: 0;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.tableRow strong {
+  color: var(--secondary);
+}
+
+.tagNormal,
+.tagAlert {
+  display: inline-flex;
+  padding: 10px 18px;
+  border-radius: 18px;
+  font-weight: 700;
+}
+
+.tagNormal {
+  background: rgba(16, 185, 129, 0.14);
+  color: #047857;
+}
+
+.tagAlert {
+  background: rgba(220, 38, 38, 0.14);
+  color: #b91c1c;
+}
+
+.dashBoardGrid {
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 24px;
+}
+
+.riskMeter {
+  display: grid;
+  gap: 16px;
+  margin: 26px 0;
+}
+
+.riskFill {
+  height: 22px;
+  width: 78%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary), #0ea5e9);
+}
+
+.riskCard p {
+  color: var(--muted);
+}
+
+.analysisSummary .summaryBullets {
+  display: grid;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.analysisSummary .summaryBullets p {
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  .resultsGrid,
+  .dashBoardGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,320 @@
+.heroSection {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 88px 24px 56px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(360px, 1fr);
+  gap: 48px;
+  align-items: center;
+}
+
+.heroCopy {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.tag {
+  background: rgba(37, 99, 235, 0.12);
+  color: var(--primary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 12px 18px;
+  border-radius: 999px;
+  width: fit-content;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.heroCopy h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  line-height: 1.02;
+  max-width: 680px;
+  color: var(--secondary);
+}
+
+.heroCopy p {
+  max-width: 620px;
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  min-height: 56px;
+  padding: 0 28px;
+  font-weight: 700;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+}
+
+.primaryButton {
+  background: var(--primary);
+  color: #FFFFFF;
+  box-shadow: 0 20px 38px rgba(37, 99, 235, 0.2);
+}
+
+.primaryButton:hover,
+.primaryButton:focus-visible {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  background: rgba(37, 99, 235, 0.1);
+  color: var(--primary);
+}
+
+.secondaryButton:hover,
+.secondaryButton:focus-visible {
+  transform: translateY(-2px);
+}
+
+.heroStats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  padding-top: 12px;
+}
+
+.heroStats div {
+  background: #ffffff;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 24px;
+  padding: 22px 20px;
+  box-shadow: var(--shadow-soft);
+}
+
+.heroStats strong {
+  display: block;
+  font-size: 1.35rem;
+  margin-bottom: 6px;
+  color: var(--secondary);
+}
+
+.heroStats span {
+  color: var(--muted);
+}
+
+.heroVisual {
+  position: relative;
+  min-height: 560px;
+  border-radius: 44px;
+  background: linear-gradient(180deg, rgba(37, 99, 235, 0.12), #ffffff 80%);
+  padding: 42px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(37, 99, 235, 0.12);
+}
+
+.visualGradient {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(37, 99, 235, 0.22), transparent 36%);
+  pointer-events: none;
+}
+
+.heroCard {
+  position: relative;
+  z-index: 1;
+  max-width: 500px;
+  margin-top: 84px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 36px;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.08);
+  padding: 38px;
+  backdrop-filter: blur(16px);
+}
+
+.heroTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 999px;
+  color: var(--primary);
+  background: rgba(37, 99, 235, 0.08);
+  font-size: 0.92rem;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.heroCard h2 {
+  font-size: 2rem;
+  margin-bottom: 26px;
+  color: var(--secondary);
+}
+
+.heroMetrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.heroMetrics p {
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+
+.featuresSection {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 48px 24px 64px;
+}
+
+.sectionHeader {
+  max-width: 720px;
+  margin-bottom: 34px;
+}
+
+.sectionHeader span {
+  display: inline-flex;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--primary);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.sectionHeader h2 {
+  font-size: clamp(2rem, 2.4vw, 3rem);
+  line-height: 1.05;
+  color: var(--secondary);
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid rgba(37, 99, 235, 0.1);
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover,
+.card:focus-within {
+  transform: translateY(-3px);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.1);
+}
+
+.cardAccent {
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: #ffffff;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  margin-bottom: 20px;
+  box-shadow: 0 14px 30px rgba(37, 99, 235, 0.2);
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: var(--muted);
+}
+
+.workflowSection {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 52px 24px 96px;
+}
+
+.workflowGrid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.workflowCard {
+  background: #ffffff;
+  border: 1px solid rgba(37, 99, 235, 0.08);
+  border-radius: 32px;
+  padding: 30px;
+  min-height: 220px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.workflowCard:hover,
+.workflowCard:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 28px 64px rgba(15, 23, 42, 0.1);
+}
+
+.workflowStep {
+  width: 48px;
+  height: 48px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, var(--primary), #1d4ed8);
+  color: #fff;
+  font-weight: 800;
+  box-shadow: 0 14px 28px rgba(37, 99, 235, 0.18);
+}
+
+.workflowCard h3 {
+  margin-bottom: 10px;
+  color: var(--secondary);
+}
+
+.workflowCard p {
+  color: var(--muted);
+}
+
+@media (max-width: 1060px) {
+  .heroSection {
+    grid-template-columns: 1fr;
+  }
+
+  .heroVisual {
+    min-height: 460px;
+  }
+}
+
+@media (max-width: 840px) {
+  .featureGrid,
+  .workflowGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .heroStats {
+    grid-template-columns: 1fr;
+  }
+
+  .featureGrid,
+  .workflowGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .heroCard {
+    margin-top: 40px;
+  }
+}

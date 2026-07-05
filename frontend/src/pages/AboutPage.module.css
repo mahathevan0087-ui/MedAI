@@ -1,0 +1,119 @@
+.aboutPage {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 88px 24px 100px;
+  display: grid;
+  gap: 46px;
+}
+
+.heroSplit {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr;
+  gap: 32px;
+  align-items: stretch;
+}
+
+.heroSplit span {
+  display: inline-flex;
+  text-transform: uppercase;
+  color: var(--primary);
+  letter-spacing: 0.12em;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.heroSplit h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2.6rem, 3vw, 3.6rem);
+  margin-bottom: 24px;
+  color: var(--secondary);
+}
+
+.heroSplit p {
+  max-width: 620px;
+  color: var(--muted);
+}
+
+.aboutCard {
+  border-radius: 36px;
+  background: #ffffff;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  padding: 36px;
+  display: grid;
+  gap: 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.aboutCard h2 {
+  margin: 0;
+  color: var(--secondary);
+}
+
+.aboutCard p {
+  color: var(--muted);
+}
+
+.aboutStats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.aboutStats div {
+  background: rgba(37, 99, 235, 0.06);
+  border-radius: 24px;
+  padding: 26px;
+}
+
+.aboutStats strong {
+  display: block;
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+}
+
+.aboutStats span {
+  color: var(--muted);
+}
+
+.featureList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.featureList article {
+  background: #ffffff;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 32px;
+  padding: 32px;
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.featureList article:hover,
+.featureList article:focus-within {
+  transform: translateY(-2px);
+  box-shadow: 0 28px 64px rgba(15, 23, 42, 0.1);
+}
+
+.featureList h3 {
+  margin-bottom: 14px;
+  color: var(--secondary);
+}
+
+.featureList p {
+  color: var(--muted);
+}
+
+@media (max-width: 980px) {
+  .heroSplit,
+  .featureList {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .aboutPage {
+    padding-top: 56px;
+  }
+}

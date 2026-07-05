@@ -1,0 +1,48 @@
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex: 1;
+}
+
+.notFoundSection {
+  padding: 120px 24px;
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 220px);
+}
+
+.notFoundCard {
+  max-width: 520px;
+  background: #ffffff;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  box-shadow: 0 24px 80px rgba(15, 23, 42, 0.06);
+  border-radius: 32px;
+  padding: 42px;
+  text-align: center;
+}
+
+.overline {
+  color: #2563eb;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.buttonPrimary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  border-radius: 14px;
+  background: #2563eb;
+  color: #fff;
+  padding: 0 26px;
+  margin-top: 24px;
+  box-shadow: 0 18px 32px rgba(37, 99, 235, 0.18);
+}
